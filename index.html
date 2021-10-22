@@ -1,1 +1,283 @@
-Hello World
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Xintong Wang | researcher</title>
+
+    <meta name="generator" content="Jekyll v3.9.0" />
+    <meta property="og:title" content="Xintong Wang" />
+    <meta property="og:locale" content="en_US" />
+    <meta name="description" content="researcher" />
+    <meta property="og:description" content="researcher" />
+    <link rel="canonical" href="https://xintongemilywang.github.io/" />
+    <meta property="og:url" content="https://xintongemilywang.github.io/" />
+    <meta property="og:site_name" content="Xintong Wang" />
+    <meta name="twitter:card" content="summary" />
+    <meta property="twitter:title" content="Xintong Wang" />
+    <script type="application/ld+json">
+    {"description":"researcher","url":"https://xintongemilywang.github.io/","@type":"WebSite","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://xintongemilywang.github.io/assets/img/logo2.png"}},"headline":"Xintong Wang","name":"Xintong Wang","@context":"https://schema.org"}</script>
+    <!-- End Jekyll SEO tag -->
+
+    <link rel="stylesheet" href="stylesheets/styles_1.css">
+    <!-- <link rel="stylesheet" href="stylesheets/pygment_trac.css"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="sidebar">
+      <header>
+        <h1 class="title"><a href="https://xintongemilywang.github.io/">Xintong Wang</a></h1>  
+        <img src="assets/img/xintong.jpeg" class="logo" alt="Logo" />
+
+        <div class="icons">       
+            <a href="mailto:xintongw@seas.harvard.edu" target="_blank"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+          
+            <a href="https://scholar.google.com/citations?user=wNCRzewAAAAJ&hl=en" target="_blank"><i class="fa fa-graduation-cap" aria-hidden="true"></i></a>    
+          
+            <!-- <a href="http://www.twitter.com/tararootcake" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a> -->
+          
+            <a href="https://github.com/XintongEmilyWang" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+
+            <a href="http://www.linkedin.com/in/xintong-wang-42038245/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>        
+        </div>
+      </div>
+      </header>
+
+      <section class="content">
+
+        <p>Hi! I'm Xintong Wang (my name in Chinese: <span style="font-family:STKaiti; font-size:12pt"> 王欣曈</span>). I'm a postdoctoral fellow at the <a href="https://www.seas.harvard.edu/">Harvard John A. Paulson School of Engineering and Applied Sciences</a> hosted by Prof. <a href="https://https://parkes.seas.harvard.edu/">David C. Parkes</a>. I received my Ph.D. degree in 2021 from the <a href = "https://www.cse.umich.edu/"> Computer Science and Engineering Department</a> at the University of Michigan</a> advised by Prof. <a href = "https://strategicreasoning.org/michael-p-wellman/">Michael P. Wellman</a>.</p>
+
+        <p>My research interests lie in the intersection of computer science and economics. I develop and apply methods from multi-agent system, machine learning, and algorithmic game theory to understand strategic reasoning of rational agents and design mechanisms. Some applications of my research include financial market and digital platform design. You can find my CV <a href="assets/cv/CV.pdf">here</a>.</p>
+
+        <p><a href = "#news">[News]</a> <a href = "#publications">[Publications]</a>  <a href = "#experience">[Experience]</a> <a href="#awards">[Awards]</a> <a href = "#teaching">[Teaching]</a> <a href="#misc">[Misc.]</a> <a href="#resources">[Resources]</a><p>
+
+        <a name = "news" class="disabled"><h2 class="title" id="recent-news">Recent news</h2></a>
+        <ul>
+          <li><strong>Oct 2021</strong>: Giving talks about our recent work on combinatorial financial options at <a href="https://www.nber.org/conferences/market-design-working-group-meeting-fall-2021" target="_blank">NBER Market Design Working Group Meeting</a> and <a href="https://meetings2.informs.org/wordpress/anaheim2021/" target="_blank">INFORMS 2021</a>.</li>
+          <li><strong>July 2021</strong>: Moving to Cambridge, MA after almost six wonderful years at Ann Arbor!</li>
+          <li><strong>Feb 2021</strong>: Happy to be joining Prof. <a href="https://https://parkes.seas.harvard.edu/">David Parkes</a>'s research group at Harvard as a postdoctoral fellow.</li>
+          <li><strong>Dec 2020</strong>: Defended my thesis on computational modeling and design of financial markets!</li>
+        </ul>
+
+      <div class="container">
+      <a name = "publications" class="disabled"><h2 class="title" id="publications"> Papers </h2></a>
+      <script>
+      function copy(dest, source) {
+        if(dest.source == source) {
+          dest.innerHTML = "";
+          dest.source = null;
+          dest.style.width="0px";
+          dest.style.border = "";
+          dest.style.padding = "0px";
+        }
+        else {
+          dest.innerHTML = source.innerHTML;
+          dest.source = source;
+          dest.style.width = "500px";
+          dest.style.padding = "10px";
+          dest.style.border = "2px dotted gray";
+          dest.style.background = "#F5F5F5";
+          dest.style.margin = "10px";
+        }
+        dest.blur();
+      }
+      </script>
+      <script>
+        paper_count = 0
+
+        function add_paper(title, authors, conference, link, bib, abstract, arxiv_link, code, data, slides, talk, msg) {
+            list_entry = "<li>"
+            if (link != null)
+                list_entry += "<a href=\"" + link + "\">"
+            list_entry += "<b><strong>" + title + "</strong></b>"
+            if (link != null)
+                list_entry += "</a>"
+            list_entry += "<br>" + authors + "<br>" + conference + "</li>"
+
+            if (abstract != null) {
+                list_entry += "<div id=\"abstract" + paper_count + "\" style=\"display:none\">" + abstract + "</div>"
+                list_entry += "<a href=\"javascript:copy(div" + paper_count + ",abstract" + paper_count + ")\"> <span class=\"label label-warning\">[abstract]</span></a>"
+            }
+
+            if (bib != null) {
+                list_entry += "<div id=\"bib" + paper_count + "\" style=\"display:none\">" + bib + "</div>"
+                list_entry += "<a href=\"javascript:copy(div" + paper_count + ",bib" + paper_count + ")\"> <span class=\"label label-success\">[bib]</span></a>"
+            }
+
+            if (arxiv_link != null)
+                list_entry += " <a href=\"" + arxiv_link + "\"><span class=\"label label-primary\">[paper]</span></a>"
+
+            if (code != null)
+                list_entry += " <a href=\"" + code + "\"><span class=\"label label-danger\">[code/model]</span></a>"
+
+            if (data != null)
+                list_entry += " <a href=\"" + data + "\"><span class=\"label label-default\">[data]</span></a>"
+
+            if (slides != null)
+                list_entry += " <a href=\"" + slides + "\"><span class=\"label label-info\">[slides]</span></a>"
+
+            // if (poster != null)
+            //     list_entry += " <a href=\"" + poster + "\"><span class=\"label label-info\">poster</span></a>"
+
+            if (talk != null)
+                list_entry += " <a href=\"" + talk + "\"><span class=\"label label-success\">[talk]</span></a>"
+
+            list_entry += "<br>"
+
+            if (msg != null)
+                list_entry += "<i>" + msg + "</i>"
+
+            list_entry += "<div id=\"div" + paper_count + "\" style=\"font-size:15px\"></div><br>"
+
+            document.write(list_entry)
+
+            paper_count += 1
+        }
+
+        // document.write("<h2>2021</h2>")
+        document.write("<ul>")
+        add_paper("Designing a Combinatorial Financial Options Market",
+            "<em>Xintong Wang</em>, David M. Pennock, Nikhil R. Devanur,<br> David M. Rothschild, Biaoshuai Tao, Michael P. Wellman.",
+            "EC 2021",
+            "https://arxiv.org/abs/2109.06443",
+            "@inproceedings{wang2021combo_options,<br>" +
+            "&nbsp;&nbsp;&nbsp;title={Designing a Combinatorial Financial Options Market},<br>" +
+            "&nbsp;&nbsp;&nbsp;author={Wang, Xintong and Pennock, David M. and Devanur, Nikhil R. and Rothschild, David M. and Tao, Biaoshuai and Wellman, Michael P.},<br>" +
+            "&nbsp;&nbsp;&nbsp;booktitle = {Proceedings of the 22nd ACM Conference on Economics and Computation (EC)},<br>" +
+            "&nbsp;&nbsp;&nbsp;pages = {864–883},<br>" +
+            "&nbsp;&nbsp;&nbsp;year={2021}<br>}",
+            "Financial options are contracts that specify the right to buy or sell an underlying asset at a strike price by an expiration date. Standard exchanges offer options of predetermined strike values and trade options of different strikes independently, even for those written on the same underlying asset. Such independent market design can introduce arbitrage opportunities and lead to the thin market problem. The paper first proposes a mechanism that consolidates and matches orders on standard options related to the same underlying asset, while providing agents the flexibility to specify any custom strike value. The mechanism generalizes the classic double auction, runs in time polynomial to the number of orders, and poses no risk to the exchange, regardless of the value of the underlying asset at expiration. Empirical analysis on real-market options data shows that the mechanism can find new matches for options of different strike prices and reduce bid-ask spreads. Extending standard options written on a single asset, we propose and define a new derivative instrument -- combinatorial financial options that offer contract holders the right to buy or sell any linear combination of multiple underlying assets. We generalize our single-asset mechanism to match options written on different combinations of assets, and prove that optimal clearing of combinatorial financial options is coNP-hard. To facilitate market operations, we propose an algorithm that finds the exact optimal match through iterative constraint generation, and evaluate its performance on synthetically generated combinatorial options markets of different scales. As option prices reveal the market's collective belief of an underlying asset's future value, a combinatorial options market enables the expression of aggregate belief about future correlations among assets.",
+            "https://arxiv.org/abs/2109.06443",
+            null,
+            null,
+            null,
+            "https://www.youtube.com/watch?v=H0jFXehRpAo&ab_channel=ACMSIGecom"
+        )
+
+        add_paper("Log-time Prediction Markets for Interval Securities",
+            "Miroslav Dudík*, <em>Xintong Wang</em>*, David M. Pennock, David M. Rothschild.<br> (*: equal contribution)",
+            "AAMAS 2021",
+            "https://arxiv.org/abs/2102.07308",
+            "@inproceedings{wang2021logtime_pm,<br>" +
+            "&nbsp;&nbsp;&nbsp;title={Log-time Prediction Markets for Interval Securities},<br>" +
+            "&nbsp;&nbsp;&nbsp;author = {Dud\'{\i}k, Miroslav and Wang, Xintong and Pennock, David M. and Rothschild, David M.},<br>" +
+            "&nbsp;&nbsp;&nbsp;booktitle={Proceedings of the 20th International Conference on Autonomous Agents and MultiAgent Systems (AAMAS)},<br>" +
+            "&nbsp;&nbsp;&nbsp;pages = {465–473},<br>" +
+            "&nbsp;&nbsp;&nbsp;year={2021}<br>}",
+            "We design a prediction market to recover a complete and fully general probability distribution over a random variable. Traders buy and sellinterval securities that pay $1 if the outcome falls into an interval and $0 otherwise. Our market takes the form of a centralautomated market maker and allows traders to express interval endpoints of arbitrary precision. We present two designs in both of which market operations take time logarithmic in the number of intervals (that traders distinguish), providing the first computationally efficient market for a continuous variable. Our first design replicates the popularlogarithmic market scoring rule (LMSR), but operates exponentially faster than a standard LMSR by exploiting its modularity properties to construct a balanced binary tree and decompose computations along the tree nodes. The second design consists of two or more parallel LMSR market makers that mediate submarkets of increasingly fine-grained outcome partitions. This design remains computationally efficient for all operations, including arbitrage removal across submarkets. It adds two additional benefits for the market designer: (1) the ability to express utility for information at various resolutions by assigning different liquidity values, and (2) the ability to guarantee a true constant bounded loss by appropriately decreasing the liquidity in each submarket.",
+            "https://arxiv.org/abs/2102.07308",
+            null,
+            null,
+            null,
+            "https://slideslive.com/38954943/logtime-prediction-markets-for-interval-securities"
+        )
+
+        add_paper("Spoofing the Limit Order Book: A Strategic Agent-Based Analysis",
+            "<em>Xintong Wang</em>, Christopher Hoang, Yevgeniy Vorobeychik, Michael P. Wellman.",
+            "Games 2021",
+            "https://www.mdpi.com/2073-4336/12/2/46",
+            "@article{Wang2021spoofing,<br>" +
+            "&nbsp;&nbsp;&nbsp;title={Spoofing the Limit Order Book: A Strategic Agent-Based Analysis},<br>" +
+            "&nbsp;&nbsp;&nbsp;author={Wang, Xintong and Hoang, Christopher and Vorobeychik, Yevgeniy and Wellman, Michael P.},<br>" +
+            "&nbsp;&nbsp;&nbsp;journal = {Games},<br>" +
+            "&nbsp;&nbsp;&nbsp;volume = {12},<br>" +
+            "&nbsp;&nbsp;&nbsp;number = {2},<br>" +
+            "&nbsp;&nbsp;&nbsp;ARTICLE-NUMBER = {46},<br>" +
+            "&nbsp;&nbsp;&nbsp;year={2021}<br>}",
+            "We present an agent-based model of manipulating prices in financial markets through spoofing: submitting spurious orders to mislead traders who learn from the order book. Our model captures a complex market environment for a single security, whose common value is given by a dynamic fundamental time series. Agents trade through a limit-order book, based on their private values and noisy observations of the fundamental. We consider background agents following two types of trading strategies: the non-spoofable zero intelligence (ZI) that ignores the order book and the manipulable heuristic belief learning (HBL) that exploits the order book to predict price outcomes. We conduct empirical game-theoretic analysis upon simulated agent payoffs across parametrically different environments and measure the effect of spoofing on market performance in approximate strategic equilibria. We demonstrate that HBL traders can benefit price discovery and social welfare, but their existence in equilibrium renders a market vulnerable to manipulation: simple spoofing strategies can effectively mislead traders, distort prices and reduce total surplus. Based on this model, we propose to mitigate spoofing from two aspects: (1) mechanism design to disincentivize manipulation; and (2) trading strategy variations to improve the robustness of learning from market information. We evaluate the proposed approaches, taking into account potential strategic responses of agents, and characterize the conditions under which these approaches may deter manipulation and benefit market welfare. Our model provides a way to quantify the effect of spoofing on trading behavior and market efficiency, and thus it can help to evaluate the effectiveness of various market designs and trading strategies in mitigating an important form of market manipulation.",
+            "https://www.mdpi.com/2073-4336/12/2/46"
+        )
+
+        add_paper("Computational Modeling and Design of Financial Markets: Towards Manipulation-Resistant and Expressive Markets",
+            "<em>Xintong Wang</em>.",
+            "Ph.D. Thesis 2021",
+            "https://deepblue.lib.umich.edu/handle/2027.42/167942",
+            "@phdthesis{Wang2021thesis,<br>" +
+            "&nbsp;&nbsp;&nbsp;title={Computational Modeling and Design of Financial Markets: Towards Manipulation-Resistant and Expressive Markets},<br>" +
+            "&nbsp;&nbsp;&nbsp;author={Wang, Xintong},<br>" +
+            "&nbsp;&nbsp;&nbsp;school={The University of Michigan, Ann Arbor},<br>" +
+            "&nbsp;&nbsp;&nbsp;year={2021}<br>}",
+            null,
+            "https://deepblue.lib.umich.edu/handle/2027.42/167942"
+        )
+
+        add_paper("Market Manipulation: An Adversarial Learning Framework for Detection and Evasion",
+            "<em>Xintong Wang</em>, Michael P. Wellman.",
+            "IJCAI 2020",
+            "https://www.ijcai.org/proceedings/2020/638",
+            "@inproceedings{Wang2020advmanipulation,<br>" +
+            "&nbsp;&nbsp;&nbsp;title={Market Manipulation: An Adversarial Learning Framework for Detection and Evasion},<br>" +
+            "&nbsp;&nbsp;&nbsp;author={Wang, Xintong and Wellman, Michael P.},<br>" +
+            "&nbsp;&nbsp;&nbsp;booktitle={Proceedings of the 29th International Joint Conference on Artificial Intelligence. Special Track on AI in FinTech},<br>" +
+            "&nbsp;&nbsp;&nbsp;pages = {4626-4632},<br>" +
+            "&nbsp;&nbsp;&nbsp;year={2020}<br>}",
+            "We propose an adversarial learning framework to capture the evolving game between a regulator who develops tools to detect market manipulation and a manipulator who obfuscates actions to evade detection. The model includes three main parts: (1) a generator that learns to adapt original manipulation order streams to resemble trading patterns of a normal trader while preserving the manipulation intent; (2) a discriminator that differentiates the adversarially adapted manipulation order streams from normal trading activities; and (3) an agent-based simulator that evaluates the manipulation effect of adapted outputs. We conduct experiments on simulated order streams associated with a manipulator and a market-making agent respectively. We show examples of adapted manipulation order streams that mimic a specified market maker's quoting patterns and appear qualitatively different from the original manipulation strategy we implemented in the simulator. These results demonstrate the possibility of automatically generating a diverse set of (unseen) manipulation strategies that can facilitate the training of more robust detection algorithms.",
+            "https://www.ijcai.org/proceedings/2020/638"
+        )
+
+        add_paper("Generating Realistic Stock Market Order Streams",
+            "Junyi Li, <em>Xintong Wang</em>, Yaoyang Lin, Arunesh Sinha, Michael P. Wellman.",
+            "AAAI 2020",
+            "https://ojs.aaai.org//index.php/AAAI/article/view/5415",
+            "@inproceedings{Li2020gan,<br>" +
+            "&nbsp;&nbsp;&nbsp;title={Generating Realistic Stock Market Order Streams},<br>" +
+            "&nbsp;&nbsp;&nbsp;author={Li, Junyi and Wang, Xintong and Lin, Yaoayng, and Sinha, Arunesh and Wellman, Michael P.},<br>" +
+            "&nbsp;&nbsp;&nbsp;booktitle={Proceedings of the AAAI Conference on Artificial Intelligence},<br>" +
+            "&nbsp;&nbsp;&nbsp;volume = {34},<br>" +
+            "&nbsp;&nbsp;&nbsp;number = {01},<br>" +
+            "&nbsp;&nbsp;&nbsp;pages = {727-734},<br>" +
+            "&nbsp;&nbsp;&nbsp;year={2020}<br>}",
+            "We propose an approach to generate realistic and high-fidelity stock market data based on generative adversarial networks (GANs). Our Stock-GAN model employs a conditional Wasserstein GAN to capture history dependence of orders. The generator design includes specially crafted aspects including components that approximate the market's auction mechanism, augmenting the order history with order-book constructions to improve the generation task. We perform an ablation study to verify the usefulness of aspects of our network structure. We provide a mathematical characterization of distribution learned by the generator. We also propose statistics to measure the quality of generated orders. We test our approach with synthetic and actual market data, compare to many baseline generative models, and find the generated data to be close to real data.",
+            "https://ojs.aaai.org//index.php/AAAI/article/view/5415"
+        )
+
+        add_paper("Learning-based Trading Strategies in the Face of Market Manipulation",
+            "<em>Xintong Wang</em>, Christopher Hoang, Michael P. Wellman.",
+            "ICAIF 2020",
+            "https://dl.acm.org/doi/abs/10.1145/3383455.3422568",
+            "@inproceedings{Wang2020learning_trading,<br>" +
+            "&nbsp;&nbsp;&nbsp;title={Learning-based Trading Strategies in the Face of Market Manipulation},<br>" +
+            "&nbsp;&nbsp;&nbsp;author={Wang, Xintong and Hoang, Christopher, and Wellman, Michael P.},<br>" +
+            "&nbsp;&nbsp;&nbsp;booktitle={Proceedings of the First ACM International Conference on AI in Finance},<br>" +
+            "&nbsp;&nbsp;&nbsp;pages = {1-8},<br>" +
+            "&nbsp;&nbsp;&nbsp;year={2020}<br>}",
+            "We study learning-based trading strategies in markets where prices can be manipulated through spoofing: the practice of submitting spurious orders to mislead traders who use market information. To reduce the vulnerability of learning traders to such manipulation, we propose two variations based on the standard heuristic belief learning (HBL) trading strategy, which learns transaction probabilities from market activities observed in an order book. The first variation selectively ignores orders at certain price levels, particularly where spoof orders are likely to be placed. The second considers the full order book, but adjusts its limit order price to correct for bias in decisions based on the learned heuristic beliefs. We employ agent-based simulation to evaluate these variations on two criteria: effectiveness in non-manipulated markets and robustness against manipulation. Background traders can adopt the (non-learning) zero intelligence strategies or HBL, in its basic form or the two variations. We conduct empirical game-theoretic analysis upon simulated payoffs to derive approximate strategic equilibria, and compare equilibrium outcomes across a variety of trading environments. Results show that agents can strategically make use of the option to block orders to improve robustness against spoofing, while retaining a comparable competitiveness in non-manipulated markets. Our second HBL variation exhibits a general improvement over standard HBL, in markets with and without manipulation. Further explorations suggest that traders can enjoy both improved profitability and robustness by combining the two proposed variations.",
+            "https://dl.acm.org/doi/abs/10.1145/3383455.3422568"
+        )
+
+        add_paper("A Cloaking Mechanism to Mitigate Market Manipulation",
+            "<em>Xintong Wang</em>, Yevgeniy Vorobeychik, Michael P. Wellman.",
+            "IJCAI 2018",
+            "https://www.ijcai.org/proceedings/2018/75",
+            "@inproceedings{Wang2018cloaking,<br>" +
+            "&nbsp;&nbsp;&nbsp;title={A Cloaking Mechanism to Mitigate Market Manipulation},<br>" +
+            "&nbsp;&nbsp;&nbsp;author={Wang, Xintong and Vorobeychik, Yevgeniy and Wellman, Michael P.},<br>" +
+            "&nbsp;&nbsp;&nbsp;booktitle={Proceedings of the 27th International Joint Conference on Artificial Intelligence},<br>" +
+            "&nbsp;&nbsp;&nbsp;pages = {541-547},<br>" +
+            "&nbsp;&nbsp;&nbsp;year={2018}<br>}",
+            "We propose a cloaking mechanism to deter spoofing, a form of manipulation in financial markets. The mechanism works by symmetrically concealing a specified number of price levels from the inside of the order book. To study the effectiveness of cloaking, we simulate markets populated with background traders and an exploiter, who strategically spoofs to profit. The traders follow two representative bidding strategies: the non-spoofable zero intelligence and the manipulable heuristic belief learning. Through empirical game-theoretic analysis across parametrically different environments, we evaluate surplus accrued by traders, and characterize the conditions under which cloaking mitigates manipulation and benefits market welfare. We further design sophisticated spoofing strategies that probe to reveal cloaked information, and find that the effort and risk exceed the gains.",
+            "https://www.ijcai.org/proceedings/2018/75"
+        )
+
+        add_paper("Spoofing the Limit Order Book: An Agent-based Model",
+            "<em>Xintong Wang</em>, Michael P. Wellman.",
+            "AAMAS 2017",
+            "https://dl.acm.org/doi/10.5555/3091125.3091219",
+            "@inproceedings{Wang2017spoofing,<br>" +
+            "&nbsp;&nbsp;&nbsp;title={Spoofing the Limit Order Book: An Agent-based Model},<br>" +
+            "&nbsp;&nbsp;&nbsp;author={Wang, Xintong and Wellman, Michael P.},<br>" +
+            "&nbsp;&nbsp;&nbsp;booktitle={Proceedings of the 16th Conference on Autonomous Agents and MultiAgent Systems},<br>" +
+            "&nbsp;&nbsp;&nbsp;pages = {651-659},<br>" +
+            "&nbsp;&nbsp;&nbsp;year={2017}<br>}",
+            "We present an agent-based model of manipulating prices in financial markets through spoofing: submitting spurious orders to mislead traders who observe the order book. Built around the standard limit-order mechanism, our model captures a complex market environment with combined private and common values, the latter represented by noisy observations upon a dynamic fundamental time series. We consider background agents following two types of trading strategies: zero intelligence (ZI) that ignores the order book and heuristic belief learning (HBL) that exploits the order book to predict price outcomes. By employing an empirical game-theoretic analysis to derive approximate strategic equilibria, we demonstrate the effectiveness of HBL and the usefulness of order book information in a range of non-spoofing environments. We further show that a market with HBL traders is spoofable, in that a spoofer can qualitatively manipulate prices towards its desired direction. After re-equilibrating games with spoofing, we find spoofing generally hurts market surplus and decreases the proportion of HBL. However, HBL's persistence in most environments with spoofing indicates a consistently spoofable market. Our model provides a way to quantify the effect of spoofing on trading behavior and efficiency, and thus measures the profitability and cost of an important form of market manipulation.",
+            "https://dl.acm.org/doi/10.5555/3091125.3091219"
+        )
+        document.write("</ul>")
+      </script>
+  </body>
+</html>
